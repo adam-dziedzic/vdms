@@ -16,7 +16,9 @@
 When upgrade to Ubuntu 18.04, some libraries are still needed for OpenCV 3.4 and others, but not provided by the new OS. We can install it like this (source: https://researchxuyc.wordpress.com/2018/09/26/install-libjasper-in-ubuntu-18-04/):
 `
 sudo add-apt-repository "deb http://security.ubuntu.com/ubuntu xenial-security main"
+
 sudo apt update
+
 sudo apt install libjasper1 libjasper-dev
 `
 
