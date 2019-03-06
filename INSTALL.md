@@ -66,6 +66,16 @@ Flag | Explanation
 -jX         | Compiles in parallel, using X cores
 INTEL_PATH=path  | Path to the root folder containing pmgd and vcl. Default is "./" which is pmgd and vcl inside vdms folder. Example: scons INTEL_PATH=/opt/intel/
 
+Install tbb library: https://stackoverflow.com/questions/10726537/how-to-install-tbb-from-source-on-linux-and-make-it-work
+
+Additional commands:
+
+    cd /usr/local/lib
+    sudo ln -s libtbb.so.2 libtbb.so
+    sudo ldconfig
+    
+    sudo scp vdms/utils/libvdms-utils.so /usr/local/lib/
+
 ### Running The VDMS Server
 
 The config-vdms.json file contains the configuration of the server.
